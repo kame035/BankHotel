@@ -1,0 +1,925 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: 'helvetica';
+}
+
+body {
+    background-color: #FFFCF6;
+}
+
+/* ширина контента */
+.w-1860 {
+    width: 1860px;
+    margin: 0 auto;
+}
+
+/* расстояния */
+.py {
+    padding: 50px 0;
+}
+
+/* шрифты */
+@font-face {
+    font-family: 'Miracle';
+    src: url(../fonts/Miracle.otf);
+}
+
+@font-face {
+    font-family: 'helvetica';
+    src: url(../fonts/helvetica_bold.otf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'helvetica';
+    src: url(../fonts/helvetica_light.otf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'helvetica';
+    src: url(../fonts/helvetica_regular.otf);
+    font-weight: 400;
+}
+
+/* хеадер */
+header {
+    background-color: #313F38;
+}
+
+.header-in {
+    display: flex;
+    justify-content: space-between;
+    padding: 42px 0;
+}
+
+.header-logo a {
+    font-size: 20px
+}
+
+header nav {
+    display: flex;
+    gap: 70px;
+}
+
+.header-in nav a {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/* конец хедера */
+
+/* заголовки */
+h1 {
+    font-family: 'Miracle';
+    font-size: 220px;
+    font-weight: 300;
+    color: white;
+}
+
+h2 {
+    font-family: 'Miracle';
+    font-size: 150px;
+    font-weight: 300;
+    color: white;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: 'Miracle';
+    font-size: 50px;
+    font-weight: 300;
+    color: white;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+a {
+    color: white;
+}
+
+/* цвета для шрифтов */
+.yellow {
+    color: #FCD043;
+    font-family: 'Miracle';
+}
+
+.black {
+    color: black;
+}
+
+.white {
+    color: white;
+    font-family: 'Miracle';
+}
+
+/* баннер */
+.banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-full {
+    background-color: #313F38;
+}
+
+.banner-title p {
+    text-transform: uppercase;
+    color: #FCD043;
+}
+
+.banner-since::before {
+    content: url(../images/banner/Star.png);
+    padding-right: 23px;
+}
+
+.banner-since {
+    display: flex;
+    align-items: center;
+    padding: 18px 30px;
+    border: 1px solid #C4C4C4;
+    border-radius: 99px;
+    width: 170px;
+
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 350px;
+    color: white;
+}
+
+.contact-full {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    color: white;
+    font-size: 26px;
+}
+
+.banner-about {
+    text-align: end;
+}
+
+/* конец баннера */
+
+/* о нас */
+.photo {
+    display: flex;
+    justify-content: space-between;
+    gap: 181px;
+    position: relative;
+    z-index: 4434;
+}
+
+.about {
+    background-color: #313F38;
+    padding-bottom: 250px;
+}
+
+.about-us {
+    position: relative;
+    background-color: #313F38;
+}
+
+.bag {
+    position: absolute;
+    z-index: 1;
+}
+
+.ellipse {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.premium {
+    display: flex;
+    justify-content: start;
+    position: relative;
+}
+
+.label {
+    position: absolute;
+    margin-top: 40px;
+    margin-left: -120px;
+
+}
+
+.ph,
+.pr-photo {
+    margin-top: 150px;
+}
+
+.ph-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.ph-text h2 {
+    padding-bottom: 180px;
+    text-align: end;
+}
+
+.ph-text p {
+    padding-top: 50px;
+    color: #FFFCF6;
+    font-size: 18px;
+    font-weight: 300;
+    width: 443px;
+}
+
+.premium-full {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* конец о нас */
+
+/* комнаты */
+.rooms-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rooms-title p {
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.superior p {
+    color: black;
+}
+
+.gray {
+    color: gray;
+}
+
+
+.rooms-full {
+    display: flex;
+    justify-content: space-between;
+}
+
+.room-photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.room-ph {
+    position: relative;
+}
+
+.default {
+    position: absolute;
+    bottom: 57px;
+    right: 57px;
+}
+
+.room-photo,
+.photo-text {
+    margin-top: 157px;
+}
+
+.photo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+hr {
+    width: 1860px;
+}
+
+.sun::before {
+    content: url(../images/about/star.png);
+    margin-left: 150px;
+}
+
+.art-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.art-txt {
+    display: flex;
+    align-items: end;
+    gap: 187px;
+}
+
+.art-txt p {
+    width: 350px;
+}
+
+.first-full {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.first-name {
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    margin-bottom: 96px;
+}
+
+.first-name h3 {
+    margin-top: 96px;
+}
+
+.btn-down {
+    margin-bottom: 180px;
+}
+
+.second {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    margin-right: 90px;
+    border-bottom: 1px solid #313F38;
+}
+
+.sec-text {
+    display: flex;
+    gap: 150px;
+}
+
+/* конец комнат */
+
+/* плашка */
+.best {
+    position: relative;
+}
+
+.best-text {
+    position: absolute;
+    top: 100px;
+    left: 70px;
+}
+
+.best-banner {
+    background-image: url(../images/best/img.png);
+    width: 100%;
+    height: 1080px;
+}
+
+.vector {
+    position: absolute;
+    top: 35%;
+    width: 2020px;
+    left: 0px;
+}
+
+.best-text p {
+    font-size: 26px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-top: 250px;
+}
+
+/* конец плашки */
+
+/* галерея */
+.gallery {
+    padding-top: 323px;
+    background: #313F38;
+    background-repeat: no-repeat;
+    background-position: center 2080px;
+}
+
+.gallery-title {
+    color: #FFFCF6;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+
+.gallery_main {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery_title {
+    color: #FCD043;
+    text-align: center;
+    font-family: "Miracle", sans-serif;
+    font-size: 150px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130px;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+}
+
+.gallery_text {
+    color: #FFFCF6;
+    text-align: center;
+    font-family: "Helvetica Neue LT Std", system-ui;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 150px;
+}
+
+.gallery_img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.gallery_img img:nth-child(2) {
+    position: absolute;
+    top: -270px;
+    left: -30px;
+}
+
+.gallery_img img:nth-child(3) {
+    position: absolute;
+    top: -250px;
+    right: 0;
+}
+
+.gallery_img img:nth-child(4) {
+    position: absolute;
+    top: 400px;
+    left: 20px
+}
+
+.gallery_img img:nth-child(5) {
+    position: absolute;
+    top: 800px;
+    right: 20px;
+    z-index: 45;
+
+}
+
+.gallery_descrip {
+    margin-left: 550px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: #FFFCF6;
+    font-family: "Helvetica Neue LT Std", system-ui;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 788px;
+}
+
+.gallery_content {
+    position: relative;
+}
+
+.logoes {
+    position: absolute;
+    bottom: 200px;
+}
+
+.logoes h2 {
+    font-size: 120px;
+    color: #3D453C;
+    font-family: 'Miracle';
+    text-transform: none;
+}
+
+.act {
+    color: white;
+    font-family: 'Miracle';
+    text-transform: none;
+}
+
+/* конец галереи */
+
+/* контакты */
+.contact-full {
+    position: relative;
+}
+
+.contact-title {
+    position: absolute;
+    right: 10%;
+    margin-top: 40px;
+}
+
+.contact-title img {
+    margin-top: 250px;
+    z-index: 34;
+}
+
+.contact-tit h1 {
+    color: #3D453C;
+    font-family: 'Miracle';
+    font-size: 300px;
+}
+
+.sunh1:after {
+    content: url(../images/contact/Star.png);
+    padding-left: 40px;
+}
+
+.sunh1 {
+    font-family: 'Miracle';
+}
+
+.touch {
+    margin-left: 900px;
+}
+
+.contact-tit {
+    position: absolute;
+    display: flex;
+    margin-left: 70px;
+    z-index: 5657;
+    margin-top: 200px;
+}
+
+.contact-line img {
+    width: 2020px;
+    z-index: 45;
+}
+
+.cont-tel {
+    font-size: 80px;
+    text-decoration: underline solid 1px gray;
+    font-weight: 300;
+    margin-left: 70px;
+
+}
+
+.check-full {
+    display: flex;
+    border: 1px solid #313F38;
+    padding: 40px 0;
+    align-items: center;
+}
+
+.check p::after {
+    content: url(../images/contact/Vector.png);
+    padding-left: 105px;
+    padding-right: 26px;
+}
+
+.check-first p {
+    border-right: 1px solid gray;
+}
+
+.check p {
+    padding: 0 40px;
+}
+
+.checed {
+    display: flex;
+}
+
+.checed button {
+    padding: 61px;
+    background-color: #313F38;
+    color: white;
+}
+
+.find-name {
+    font-size: 26px;
+    padding-bottom: 50px;
+}
+
+.find {
+    margin: 250px 0 200px;
+}
+
+/* конец контактов */
+
+/* футер */
+footer {
+    display: flex;
+    gap: 188px;
+    padding: 100px 0;
+    border-top: 1px solid gray;
+}
+
+.foot-about h4 {
+    font-size: 26px;
+    font-weight: 300;
+    padding-bottom: 40px;
+}
+
+.foot-name {
+    width: 285px;
+}
+
+.copy {
+    font-size: 14px;
+    color: #C4C4C4;
+    margin-top: 60px;
+}
+
+.form-email {
+    padding: 25px 20px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid gray;
+    margin-top: 30px;
+}
+
+.form-email input {
+    background-color: transparent;
+    border: none;
+}
+
+.social {
+    display: flex;
+    gap: 50px;
+}
+
+.foot-about a {
+    color: black;
+    font-size: 16px;
+}
+
+/* конец футера */
+
+/* баннер на старнице комнат */
+.room-banner {
+    position: relative;
+}
+
+.room-banner img {
+    width: 100%;
+}
+
+.room-banner-text {
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    width: 95%;
+}
+
+.room-banner-text p {
+    text-transform: uppercase;
+    font-size: 26px;
+    margin-top: 300px;
+}
+
+.banner-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+/* конец баннера */
+
+/* о комнате */
+.room-about {
+    background-color: #313F38;
+}
+
+.since-white {
+    color: white;
+}
+
+.room-about-text {
+    display: flex;
+    gap: 438px;
+    margin-top: 100px;
+}
+
+.room-about-text p {
+    width: 350px;
+    color: white;
+}
+
+.room {
+    position: relative;
+    background-color: #313F38;
+}
+
+.room-img img {
+    position: relative;
+    width: 100%;
+}
+
+.room-img {
+    height: 926px;
+}
+
+.room-text {
+    top: 0;
+    position: absolute;
+}
+
+.room-text p {
+    font-size: 40px;
+    color: #FCD043;
+    margin: 100px 70px 0;
+    margin-bottom: 100px;
+}
+
+.room-text-img {
+    position: absolute;
+    right: 13%;
+}
+
+.book-room {
+    padding-top: 160px;
+}
+
+.room-full {
+    display: flex;
+    justify-content: space-between;
+}
+
+.room-full p {
+    width: 443px;
+}
+
+.first-room {
+    position: relative;
+}
+
+.first-label {
+    position: absolute;
+    right: -150px;
+    top: -110px;
+}
+
+.first-room h3 {
+    padding: 60px 0 39px;
+}
+
+.second-room p {
+    padding-top: 70px;
+}
+
+.btn-book {
+    border: 1px solid gray;
+    border-radius: 70px;
+    padding: 24px 39px;
+    width: 120px;
+}
+
+/* конец о комнате */
+
+
+/* о ресторане */
+.rest {
+    position: relative;
+    background-color: #313F38;
+}
+
+.rest-bag {
+    position: relative;
+}
+
+.rest-in {
+    position: absolute;
+    top: 25px;
+    left: 70px;
+}
+
+.rest-name {
+    font-size: 150px;
+    margin-bottom: 150px;
+}
+
+.rest-text {
+    position: absolute;
+    display: flex;
+    top: 18%;
+    right: 12%;
+}
+
+.label-txt p {
+    width: 350px;
+    color: white;
+    padding-top: 130px;
+    margin-left: -20px;
+}
+
+.rest-photo {
+    margin-left: 70px;
+    gap: 30px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+}
+
+.disc {
+    width: 443px;
+}
+
+.dicss {
+    padding-top: 350px;
+    background-color: #313F38;
+}
+
+.disc p {
+    color: white;
+    padding-top: 40px;
+}
+
+.bg {
+    background-color: #313F38;
+    padding-top: 300px;
+}
+
+.once-img1 p {
+    color: #FCD043;
+    font-size: 26px;
+    text-transform: uppercase;
+    padding-top: 70px;
+}
+
+.once {
+    display: flex;
+    justify-content: end;
+}
+
+.onces {
+    display: flex;
+    gap: 346px;
+    padding-top: 150px;
+}
+
+.once-img21 h3 {
+    padding: 150px 0 40px;
+}
+
+.once-img21 p {
+    width: 442px;
+    color: white;
+}
+
+/* конец о ресторане */
+
+/* контакты */
+.address p {
+    color: white;
+    font-size: 26px;
+    margin-left: 70px;
+}
+
+.address a {
+    display: flex;
+    justify-content: end;
+    color: white;
+}
+
+.check-green {
+    background-color: #45524B;
+}
+
+.check-green p {
+    color: white;
+}
+
+.checed-gr button {
+    background-color: #FCD043;
+    border: transparent;
+    color: #313F38;
+}
+
+/* конец контактов */
+
+/* футер ресторан */
+.fin {
+    background-color: #313F38;
+}
+
+.find-name-white {
+    color: white;
+}
+
+.rest-foot {
+    background-color: #313F38;
+}
+
+.rest-foot h4, .rest-foot p, .rest-foot, .social-wh a {
+    color: white;
+}
+
+.footer-in {
+    display: flex;
+    gap: 188px;
+}
+
+/* конец футера */
